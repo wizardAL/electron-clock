@@ -14,6 +14,10 @@ npm install electron --save-dev
 npm start
 ```
 
+展示效果截图如下
+
+![截图](./images/snapshot.png)
+
 ## 打包
 
 安装electron的打包工具`electron-packager`，执行以下打包命令
