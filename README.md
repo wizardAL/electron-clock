@@ -6,7 +6,7 @@
 npm install electron --save-dev
 ```
 
-##启动
+## 启动
 
 直接执行如下命令即可启动
 
