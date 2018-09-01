@@ -1,0 +1,131 @@
+body {
+	background: #ddf5f7;
+	overflow:hidden;
+	-webkit-app-region: drag;
+	-webkit-user-select: none;
+}
+
+button, a {
+	-webkit-app-region: no-drag;
+}
+
+#clock {
+	position: relative;
+	width: 140px;
+	height: 140px;
+	background: #96d2d0;
+	margin: 65px auto 0;
+	border: 10px solid #fff;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+
+#clock:after {
+	content: '';
+	position: absolute;
+	bottom: -8px;
+	width: 120px;
+	left: 0;
+	height: 0px;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.8);
+	-moz-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.8);
+	box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.8);
+	z-index: -1;
+}
+
+#clock:before {
+	content: '';
+	position: absolute;
+	z-index: 2;
+	width: 8px;
+	height: 8px;
+	background: #333;
+	left: 50%;
+	top: 50%;
+	margin: -4px 0 0 -4px;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+
+#clock .canvas {
+	width: 230px;
+	height: 120px;
+}
+
+/* Hands */
+#clock span.hand {
+	background: #555;
+	position: absolute;
+	left: 50%;
+	-webkit-animation: rotate 60s infinite linear;
+	-webkit-transform-origin: left bottom;
+	/*-moz-animation: rotate 60s infinite linear;
+	 -moz-transform-origin: left bottom;
+	 -ms-animation: rotate 60s infinite linear;
+	 -ms-transform-origin: left bottom;
+	 -o-animation: rotate 60s infinite linear;
+	 -o-transform-origin: left bottom;*/
+	animation: rotate 60s infinite linear;
+	transform-origin: left bottom;
+}
+
+#clock span.hand.second {
+	height: 50px;
+	width: 2px;
+	margin-left: -1px;
+	top: 10px;
+}
+
+#clock span.hand.minute {
+	height: 40px;
+	width: 4px;
+	margin-left: -2px;
+	top: 20px;
+	-webkit-animation-duration: 3600s;
+	/*-moz-animation-duration: 3600s;
+	 -ms-animation-duration: 3600s;
+	 -o-animation-duration: 3600s;*/
+	animation-duration: 3600s;
+}
+
+#clock span.hand.hour {
+	height: 30px;
+	width: 6px;
+	margin-left: -3px;
+	top: 30px;
+	-webkit-animation-duration: 84600s;
+	/*-moz-animation-duration: 84600s;
+	 -ms-animation-duration: 84600s;
+	 -o-animation-duration: 84600s;*/
+	animation-duration: 84600s;
+}
+
+@-webkit-keyframes rotate {
+0% { -webkit-transform: rotate(0deg);}
+100% { -webkit-transform: rotate(360deg);}
+}
+
+/*@-moz-keyframes rotate {
+ 0% { -moz-transform: rotate(0deg);}
+ 100% { -moz-transform: rotate(360deg);}
+ }
+
+ @-ms-keyframes rotate {
+ 0% { -ms-transform: rotate(0deg);}
+ 100% { -ms-transform: rotate(360deg);}
+ }
+
+ @-o-keyframes rotate {
+ 0% { -o-transform: rotate(0deg);}
+ 100% { -o-transform: rotate(360deg);}
+ }	*/
+
+@keyframes rotate {
+0% { transform: rotate(0deg);}
+100% { transform: rotate(360deg);}
+}

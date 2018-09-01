@@ -1,0 +1,91 @@
+/*-------- ‘∆“‘º∞∂Øª≠ --------*/
+.cloud {
+	position: absolute;
+}
+.cloud.small {
+	z-index: 1;
+	top: 25%;
+	left: 15%;
+	background: url(../images/cloudSmall.png) no-repeat no-repeat center;
+	height: 50px;
+	width: 89px;
+	-webkit-animation: cloudSmall 165s infinite;
+	-moz-animation: cloudSmall 165s infinite;
+	-o-animation: cloudSmall 165s infinite;
+	animation: cloudSmall 165s infinite;
+}
+
+.cloud.medium {
+	z-index: 3;
+	top: 55%;
+	left: 30%;
+	background: url(../images/cloudMedium.png) no-repeat no-repeat center;
+	height: 92px;
+	width: 159px;
+	-webkit-animation: cloudMedium 80s infinite;
+	-moz-animation: cloudMedium 80s infinite;
+	-o-animation: cloudMedium 80s infinite;
+	animation: cloudMedium 80s infinite;
+}
+
+.cloud.large {
+	z-index: 2;
+	top: 35%;
+	right: 15%;
+	background: url(../images/cloudSmall.png) no-repeat no-repeat center;
+	height: 50px;
+	width: 89px;
+	-webkit-animation: cloudLarge 105s infinite;
+	-moz-animation: cloudLarge 105s infinite;
+	-o-animation: cloudLarge 105s infinite;
+	animation: cloudLarge 105s infinite;
+}
+
+@keyframes cloudSmall {
+	0% {
+	left: -8%;
+	}
+	100% {
+	left: 118%;
+	}
+}
+@keyframes cloudMedium {
+	0% {
+	left: -8%;
+	}
+	100% {
+	left: 118%;
+	}
+}
+@keyframes cloudLarge {
+	 0% {
+	 right: -18%;
+	}
+	 100% {
+	 right: 118%;
+	}
+}
+@-webkit-keyframes cloudSmall {
+	0% {
+	left: -8%;
+	}
+	100% {
+	left: 118%;
+	}
+}
+@-webkit-keyframes cloudMedium {
+	0% {
+	left: -8%;
+	}
+	100% {
+	left: 118%;
+	}
+}
+@-webkit-keyframes cloudLarge {
+	 0% {
+	 right: -18%;
+	}
+	 100% {
+	 right: 118%;
+	}
+}

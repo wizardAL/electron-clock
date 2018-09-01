@@ -1,0 +1,26 @@
+{
+  "name": "electron-clock",
+  "version": "1.0.0",
+  "description": "electron clock",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/wizardAL/electron-clock.git",
+  "keywords": [
+    "clock"
+  ],
+  "author": "wizardAL",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/wizardAL/electron-clock/issues"
+  },
+  "homepage": "https://github.com/wizardAL/electron-clock#readme",
+  "devDependencies": {
+    "electron": "^2.0.8",
+    "electron-packager": "^12.1.1"
+  },
+  "scripts": {
+    "packager":"electron-packager ./ Clock --platform=mas --arch=x64 --app-version 1.0.0 --out ./bin --overwrite"
+  }
+}
