@@ -14,7 +14,7 @@
   },
   "homepage": "https://github.com/wizardAL/electron-clock#readme",
   "devDependencies": {
-    "electron": "^2.0.8",
+    "electron": "^9.1.0",
     "electron-packager": "^12.1.1"
   },
   "scripts": {
